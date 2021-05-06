@@ -1,0 +1,71 @@
+.modal
+  &-hidden
+    display: none
+  &-visible
+    display: block
+  &-wrapper
+    position: fixed
+    top: 0
+    left: 0
+    background-color: rgba(0, 0, 0, 0.3)
+    width: 100vw
+    height: 100vh
+  &-form
+    margin: 10% auto
+    background-color: #fff
+    box-shadow: 0px 0px 18px 9px rgba(34, 60, 80, 0.22)
+    width: 50%
+    border-radius: 20px
+    padding: 25px 100px
+    h1
+      font-family: 'Oswald', sans-serif
+      text-align: center
+      font-size: 30px
+      letter-spacing: 10px
+      text-transform: uppercase
+    &-title
+      margin-top: 20px
+      &-input
+        font-family: 'Oswald', sans-serif
+        font-size: 25px
+        font-weight: 400
+        letter-spacing: 4px
+    &-content
+      margin-top: 35px
+    &-btns
+      margin-top: 20px
+      display: flex
+      justify-content: space-between
+  &-input
+    border-radius: 5px
+    border: 2px solid #f3cb5e
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2)
+    margin-top: 20px
+    width: 100%
+    padding: 5px 10px
+    &:focus
+      border: 2px solid #ffbb00
+    &-title
+      font-size: 25px
+      &::placeholder
+        font-style: italic
+    &-error
+      border: 2px solid #ff1818
+    &-content
+      resize: none
+      font-size: 18px
+      max-height: 200px
+  &-btn
+    box-shadow: 3px 3px 7px -2px #ffe44a
+    background-color: #f3cb5e
+    border-radius: 12px
+    border: 2px solid #ffbb00
+    cursor: pointer
+    color: #3f3f3f
+    font-size: 20px
+    padding: 10px 30px
+    &:hover
+      background-color: #ffbb00
+    &:active
+      position: relative
+      top: 1px

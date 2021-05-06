@@ -1,0 +1,45 @@
+.header
+  background-color: #ffc018
+  padding: 30px
+  user-select: none
+  display: flex
+  justify-content: space-around
+  align-items: center
+  &-logo
+    text-transform: uppercase
+    font-size: 40px
+    font-family: 'Oswald', sans-serif
+  &-search
+    display: flex
+    justify-content: center
+    &-input
+      border: 2px solid #f3cb5e
+      border-right: 0px
+      outline: none
+      border-top-left-radius: 5px
+      border-bottom-left-radius: 5px
+      width: 400px
+      height: 40px
+      padding: 5px 20px
+      font-size: 20px
+      font-style: italic
+      +boxShadow
+      &::placeholder
+        font-size: 20px
+        color: #9d9d9d
+    &-btn
+      display: flex
+      justify-content: center
+      align-items: center
+      padding: 0 15px
+      font-size: 25px
+      background-color: #f3cb5e
+      border-top-right-radius: 5px
+      border-bottom-right-radius: 5px
+      transition: .3s all
+      +boxShadow
+      &:hover
+        background-color: #eebd36
+        color: #f1efe8
+        cursor: pointer
+      
