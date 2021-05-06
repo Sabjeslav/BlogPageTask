@@ -10,6 +10,9 @@ const articleContent = document.querySelector(".modal-input-content");
 const articlesWrapper = document.querySelector(".articles-wrapper");
 const searchInput = document.querySelector(".header-search-input");
 
+const editBtn = document.querySelectorAll(".btn-edit");
+const deleteBtn = document.querySelectorAll(".btn-delete"); 
+
 function renderArticles(searchStr) {
   if (searchStr) {
     articlesWrapper.textContent = "";
@@ -33,7 +36,7 @@ function createArticleWrapper(item) {
     "div",
     { classNames: ["main-article"] },
     articleHeader(item),
-    articleText(item)
+    articleText(item),
   );
 }
 
@@ -61,6 +64,7 @@ function articleText({ content }) {
   textContent.textContent = content;
   return textContent;
 }
+
 
 function getCurrentDate() {
   let today = new Date();
@@ -113,9 +117,8 @@ publishBtn.addEventListener("click", (e) => {
     content: articleContent.value,
   };
   Data.push(newArticle);
-  searchInput.value="";
+  searchInput.value = "";
   renderArticles(searchInput.value);
-  // articlesWrapper.append(createArticleWrapper(newArticle));
   closeForm();
 });
 
