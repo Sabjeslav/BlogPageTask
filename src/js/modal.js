@@ -17,7 +17,7 @@ cancelBtn.addEventListener("click", (e) => {
   closeForm();
 });
 
-window.addEventListener("click", (e) => {
+modalWindow.addEventListener("click", (e) => {
   if (e.target == modalWindow) {
     closeForm();
   }
